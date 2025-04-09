@@ -4,6 +4,16 @@ import java.sql.*;
 import java.util.*;
 
 public class Main {
+
+    public static void ProductLists() {
+        List<Product> products = ProductRepository.getALlProducts();
+
+        System.out.println("\nProduct Catalog:");
+        for (Product product : products) {
+            product.displayDetails();
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Connecting to MySQL database...");
 
@@ -23,6 +33,7 @@ public class Main {
                     case 1:
                         // Products List logic
                         System.out.println("Products are here:");
+                        ProductLists();
                         break;
                     case 2:
                         // Cart List logic

@@ -5,8 +5,8 @@ import Main.*;
 public class Electronics extends Product implements Discountable {
     private final String brand;
 
-    public Electronics(int id, String name, double price, String brand) {
-        super(id, name, price);
+    public Electronics(int id, String name, String description, double price, int stockQuantity, String category, String brand) {
+        super(id, name, description, price, stockQuantity, category, brand);
         this.brand = brand;
     }
 
