@@ -2,7 +2,6 @@ package Cart;
 import java.util.*;
 import Main.*;
 
-
 public class Cart {
     private List<Product> cartItems = new ArrayList<>();
 
@@ -42,6 +41,9 @@ public class Cart {
                 int choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
+                        Checkout.processCheckout(cartItems, getTotal());
+                        cartItems.clear();
+                        running = false;
                         break;
                     case 2:
                         running = false;
