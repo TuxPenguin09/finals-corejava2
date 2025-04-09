@@ -17,6 +17,14 @@ docker run -d --name mysql_java_finals \
   -p 3306:3306 \
   mysql:latest
 ```
+5. Execute SQL in `sql/init.sql`
+   - Use any software like MySQL Workbench, TablePlus or phpMyAdmin to execute that SQL file in a MySQL Database server.
+   - Here are the credentials of the MySQL database by default
+     - Host: `127.0.0.1:3306`
+     - Username: `username`
+     - Password: `password`
+     - Database: `finals`
+   - You can add or edit any rows for the `INSERT` block.
 
 ## Members
 - aliamanuba
