@@ -20,4 +20,12 @@ public abstract class Product {
     }
 
     public abstract void displayDetails();
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
